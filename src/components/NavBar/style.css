@@ -1,0 +1,11 @@
+.navbar {
+  height: 85px;
+  background-color: purple;
+  color: #fff;
+  font-size: 18px;
+}
+
+.navbar-text {
+  font-weight: bold;
+  color: #fff;
+}
