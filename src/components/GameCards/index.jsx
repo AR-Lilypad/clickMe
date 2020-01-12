@@ -3,11 +3,17 @@ import "./style.css";
 
 const GameCards = props => (
   <div
-    className="gameCard"
-    key={props.id}
-    onClick={() => props.handleClick(props.id, props.clicked)}
+    className="gameCards"
+    value={props.id}
+    onClick={() => props.click(props.id)}
   >
-    <img id={props.animal} src={props.image} alt={props.clicked} />
+    <div className="imgContainer">
+      <img
+        alt={props.name}
+        src={props.image}
+        // onClick={props.onClick}
+      />
+    </div>
   </div>
 );
 

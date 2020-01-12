@@ -3,9 +3,7 @@ import React from "react";
 import "./style.css";
 
 const GameBoard = props => (
-  <div className={props.shakeWrapper === "true" ? "wrapperShake" : "wrapper"}>
-    {props.pictures}
-  </div>
+  <div className="container-fluid wrapper">{props.children}</div>
 );
 
 export default GameBoard;

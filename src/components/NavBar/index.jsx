@@ -1,20 +1,29 @@
 import React from "react";
 import "./style.css";
 
-function NavBar(props) {
-  return (
-    <nav className="navbar fixed-top">
-      <h3>Click Me!</h3>
-      <p>
-        Click on any animal to earn points, but don't click any animals more
-        than once or you will lose!
-      </p>
-      <span className="navbar-text message">{props.message}</span>
-      <span className="navbar-text mr-3">
-        Score: {props.score} | Top Score: {props.top_score}
-      </span>
-    </nav>
-  );
-}
+const NavBar = props => (
+  <div className="navBar fixed-top">
+    <div className="nav-item">
+      <ul className="title-messages ml-auto">
+        <li>
+          <a href="https://ar-lilypad.github.io/clickMe/">Click Me!</a>
+        </li>
+        <li className="nav-item centernativeitem">
+          <div className="messages">
+            <span className="update">{props.update}</span>
+            <span className="correctMessage">{props.correctMessage}</span>
+            <span className="incorrectMessage">{props.incorrectMessage}</span>
+          </div>
+        </li>
+        <li className="nav-item">
+          <div className="scores">
+            Score: <span className="countScore">{props.score}</span> | Top
+            Score: <span className="countTopScore"> {props.topScore}</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+);
 
 export default NavBar;

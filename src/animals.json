@@ -1,74 +1,74 @@
 [
   {
     "id": 1,
-    "animal": "bird1",
+    "name": "bird1",
     "clicked": false,
-    "image": "public/assets/images/bird1.PNG"
+    "image": "/gamecards/images/bird1.png"
   },
   {
     "id": 2,
-    "animal": "bird3",
+    "name": "bird3",
     "clicked": false,
-    "image": "public/assets/images/bird2.png"
+    "image": "public/assets/images/bird3.png"
   },
   {
     "id": 3,
-    "animal": "bird4",
+    "name": "bird4",
     "clicked": false,
-    "image": "public/assets/images/bird2.png"
+    "image": "public/assets/images/bird4.png"
   },
   {
     "id": 4,
-    "animal": "bird5",
+    "name": "bird5",
     "clicked": false,
-    "image": "public/assets/images/bird2.png"
+    "image": "public/assets/images/bird5.png"
   },
   {
     "id": 5,
-    "animal": "bttrFly1",
+    "name": "bttrFly1",
     "clicked": false,
-    "image": "public/assets/images/bird2.png"
+    "image": "public/assets/images/bttrFly1.png"
   },
   {
     "id": 6,
-    "animal": "bttrFly2",
+    "name": "bttrFly2",
     "clicked": false,
-    "image": "public/assets/images/bird2.png"
+    "image": "./images/bttrFly2.PNG"
   },
   {
     "id": 7,
-    "animal": "bttrFly3",
+    "name": "bttrFly3",
     "clicked": false,
-    "image": "public/assets/images/bird2.png"
+    "image": "./images/bttrFly3.PNG"
   },
   {
     "id": 8,
-    "animal": "bttrFly6",
+    "name": "bttrFly6",
     "clicked": false,
-    "image": "public/assets/images/bird2.png"
+    "image": "./images/bttrFly6.PNG"
   },
   {
     "id": 9,
-    "animal": "fish1",
+    "name": "fish1",
     "clicked": false,
-    "image": "public/assets/images/bird2.png"
+    "image": "./images/fish1.PNG"
   },
   {
-    "id": 10,
-    "animal": "fish2",
+    "animal": 10,
+    "name": "fish2",
     "clicked": false,
-    "image": "public/assets/images/bird2.png"
+    "image": "./images/fish2.PNG"
   },
   {
     "id": 11,
-    "animal": "fish3",
+    "name": "fish4",
     "clicked": false,
-    "image": "public/assets/images/bird2.png"
+    "image": "./images/fish4.PNG"
   },
   {
     "id": 12,
-    "animal": "fish4",
+    "name": "fish6",
     "clicked": false,
-    "image": "public/assets/images/bird2.png"
+    "image": "./images/fish6.PNG"
   }
 ]

@@ -16,7 +16,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 200px;
+  width: 250px;
   height: 275px;
   /* float: left; */
   margin-right: 100px;
@@ -34,12 +34,11 @@
   border-radius: 5px;
 } */
 
-/* .gameCards img {
+.gameCards .imgContainer {
   height: 100%;
   overflow: hidden;
-  text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
-} */
+}
