@@ -1,8 +1,19 @@
 .navBar {
+  margin: -19px 0 -21px 0;
+  text-align: center;
   height: 85px;
   background-color: purple;
   color: #fff;
   font-size: 18px;
+}
+
+.navBar ul {
+  list-style-type: none;
+}
+
+.navBar li {
+  text-decoration: none;
+  color: #fff;
 }
 
 .navbarMessage {

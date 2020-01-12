@@ -3,18 +3,12 @@ import "./style.css";
 
 const GameCards = props => (
   <div
-    className="gameCards"
-    value={props.id}
-    onClick={() => props.click(props.id)}
-  >
-    <div className="imgContainer">
-      <img
-        alt={props.name}
-        src={props.image}
-        // onClick={props.onClick}
-      />
-    </div>
-  </div>
+    className="animalPics"
+    key={props.id}
+    alt={props.name}
+    src={props.image}
+    onClick={props.onClick}
+  />
 );
 
 export default GameCards;

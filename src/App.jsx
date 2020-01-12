@@ -1,33 +1,70 @@
 import React, { Component } from "react";
-import GameCards from "./components/GameCards";
 import GameBoard from "./components/GameBoard";
-import Header from "./components/Header";
 import NavBar from "./components/NavBar";
+import Header from "./components/Header";
+import GameCards from "./components/GameCards";
 import animals from "./animals.json";
 import "./App.css";
 
-//////////////////////////////////////////////////////////////////
+//begin App component
 class App extends Component {
   // Setting this.state.characters to the characters json array
   state = {
     score: 0,
     topScore: 0,
-    clicked: [],
+    ifClicked: [],
     update: "Click a character to begin!",
     correctMessage: "",
     incorrectMessage: "",
-    animals
+    animals: [
+      {
+        img: require("./images/bird1.PNG")
+      },
+      {
+        img: require("./images/bird3.PNG")
+      },
+      {
+        img: require("./images/bird4.PNG")
+      },
+      {
+        img: require("./images/bird5.PNG")
+      },
+      {
+        img: require("./images/bttrFly1.PNG")
+      },
+      {
+        img: require("./images/bttrFly2.PNG")
+      },
+      {
+        img: require("./images/bttrFly3.PNG")
+      },
+      {
+        img: require("./images/bttrFly6.PNG")
+      },
+      {
+        img: require("./images/fish1.PNG")
+      },
+      {
+        img: require("./images/fish2.PNG")
+      },
+      {
+        img: require("./images/fish4.PNG")
+      },
+      {
+        img: require("./images/fish6.PNG")
+      }
+    ]
   };
 
   //CLICK SECTION
   click = id => {
     const newScore = this.state.score + 1;
     //If they haven't been clicked, add them to the array
-    if (this.state.clicked.indexOf(id) === -1) {
+    if (this.state.ifClicked.indexOf(id) === -1) {
       this.handleIncrement();
       this.setState({
         //concat joins arrays
-        clicked: this.state.clicked.concat(id),
+        ifClicked: this.state.ifClicked.concat(id),
         correctMessage: "You guessed correctly!",
         incorrectMessage: "",
         update: ""
@@ -38,10 +75,10 @@ class App extends Component {
     }
 
     //Setting it to winning number
-    if (newScore === 12 && this.state.clicked.indexOf(id) === -1) {
+    if (newScore === 12 && this.state.ifClicked.indexOf(id) === -1) {
       this.setState({
         correctMessage: "You win!",
-        clicked: []
+        ifClicked: []
       });
     }
   };
@@ -62,7 +99,8 @@ class App extends Component {
         topScore: newScore
       });
     }
-    //Resetting score to 1 if they hit 13 (so that we can give them a score of 12, win the game, and then have them click again to start over). Putting in 'high score' of 12 so it can't go to 13 when they do the next click
+    //Resetting score to 1 if they hit 13 (so that we can give them a score of 12, win the game, and then have them click again to start over).
+    // this makes 'top score' 12 so it can't go to 13 when they do the next click
     if (newScore > 12) {
       this.setState({
         score: 1,
@@ -98,15 +136,13 @@ class App extends Component {
     this.shuffle();
   };
 
-  /////////////////////////////////////////////////////////////////////
-
-  //GAME RENDER
+  //Render Game
   // Map over this.state.animals and render GameCards
   render() {
     return (
-      <GameBoard>
+      <div className="app">
         <NavBar
-          title="Clicky Me"
+          title="Clicky Animals"
           score={this.state.score}
           topScore={this.state.topScore}
           update={this.state.update}
@@ -114,20 +150,18 @@ class App extends Component {
           incorrectMessage={this.state.incorrectMessage}
         />
         <Header />
-        {this.state.animals.map(animals => (
-          <GameCards
-            key={animals.id}
-            id={animals.id}
-            click={this.click}
-            name={animals.name}
-            image={animals.image}
-            scores={!this.state.score && this.state.topScore}
-          />
-        ))}
-      </GameBoard>
+        <GameBoard
+          {...this.state.animals.map((animal, index) => (
+            <GameCards
+              id={index}
+              image={animal.img}
+              onClick={this.handleClick}
+            />
+          ))}
+        />
+      </div>
     );
   }
 }
 
-//////////////////////////////////////////////////////////////////
 export default App;
