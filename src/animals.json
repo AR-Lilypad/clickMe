@@ -3,25 +3,25 @@
     "id": 1,
     "name": "bird1",
     "clicked": false,
-    "image": "../public/assets/images/bird1.png"
+    "image": "https://i.redd.it/bgctqe1y2qf11.png"
   },
   {
     "id": 2,
     "name": "bird3",
     "clicked": false,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Eopsaltria_australis_-_Mogo_Campground.jpg/220px-Eopsaltria_australis_-_Mogo_Campground.jpg"
+    "image": "https://images.unsplash.com/photo-1547732463-553e72480112?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
   },
   {
     "id": 3,
     "name": "bird4",
     "clicked": false,
-    "image": "../public/assets/images/bird4.png"
+    "image": "https://images.pexels.com/photos/1200854/pexels-photo-1200854.jpeg?cs=srgb&dl=bald-eagle-head-1200854.jpg&fm=jpg"
   },
   {
     "id": 4,
     "name": "bird5",
     "clicked": false,
-    "image": "../public/assets/images/bird5.png"
+    "image": "http://www.animalslook.com/media/just-look-at-all-those-funny-and-cute-birds/just-look-at-all-those-funny-and-cute-birds-1.jpg"
   },
   {
     "id": 5,
