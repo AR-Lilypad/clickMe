@@ -3,72 +3,72 @@
     "id": 1,
     "name": "bird1",
     "clicked": false,
-    "image": "/gamecards/images/bird1.png"
+    "image": "../public/assets/images/bird1.png"
   },
   {
     "id": 2,
     "name": "bird3",
     "clicked": false,
-    "image": "public/assets/images/bird3.png"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Eopsaltria_australis_-_Mogo_Campground.jpg/220px-Eopsaltria_australis_-_Mogo_Campground.jpg"
   },
   {
     "id": 3,
     "name": "bird4",
     "clicked": false,
-    "image": "public/assets/images/bird4.png"
+    "image": "../public/assets/images/bird4.png"
   },
   {
     "id": 4,
     "name": "bird5",
     "clicked": false,
-    "image": "public/assets/images/bird5.png"
+    "image": "../public/assets/images/bird5.png"
   },
   {
     "id": 5,
     "name": "bttrFly1",
     "clicked": false,
-    "image": "public/assets/images/bttrFly1.png"
+    "image": "../public/assets/images/bttrFly1.png"
   },
   {
     "id": 6,
     "name": "bttrFly2",
     "clicked": false,
-    "image": "./images/bttrFly2.PNG"
+    "image": "../public/assets/images/bttrFly2.PNG"
   },
   {
     "id": 7,
     "name": "bttrFly3",
     "clicked": false,
-    "image": "./images/bttrFly3.PNG"
+    "image": "../public/assets/images/bttrFly3.PNG"
   },
   {
     "id": 8,
     "name": "bttrFly6",
     "clicked": false,
-    "image": "./images/bttrFly6.PNG"
+    "image": "../public/assets/images/bttrFly6.PNG"
   },
   {
     "id": 9,
     "name": "fish1",
     "clicked": false,
-    "image": "./images/fish1.PNG"
+    "image": "../public/assets/images/fish1.PNG"
   },
   {
     "animal": 10,
     "name": "fish2",
     "clicked": false,
-    "image": "./images/fish2.PNG"
+    "image": "../public/assets/images/fish2.PNG"
   },
   {
     "id": 11,
     "name": "fish4",
     "clicked": false,
-    "image": "./images/fish4.PNG"
+    "image": "../public/assets/images/fish4.PNG"
   },
   {
     "id": 12,
     "name": "fish6",
     "clicked": false,
-    "image": "./images/fish6.PNG"
+    "image": "../public/assets/images/fish6.PNG"
   }
 ]

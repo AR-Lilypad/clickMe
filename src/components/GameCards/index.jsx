@@ -1,14 +1,12 @@
 import React from "react";
 import "./style.css";
 
-const GameCards = props => (
-  <div
-    className="animalPics"
-    key={props.id}
-    alt={props.name}
-    src={props.image}
-    onClick={props.onClick}
-  />
-);
+const GameCards = (props) => {
+  return (
+  <div className="animalPics">
+      <img alt={props.name} src={props.image} key={props.id} onClick={props.onClick} />
+    </div>
+  );
+  }
 
 export default GameCards;

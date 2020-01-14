@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import GameBoard from "./components/GameBoard";
+// import GameBoard from "./components/GameBoard";
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import GameCards from "./components/GameCards";
@@ -16,44 +16,7 @@ class App extends Component {
     update: "Click a character to begin!",
     correctMessage: "",
     incorrectMessage: "",
-    animals: [
-      {
-        img: require("./images/bird1.PNG")
-      },
-      {
-        img: require("./images/bird3.PNG")
-      },
-      {
-        img: require("./images/bird4.PNG")
-      },
-      {
-        img: require("./images/bird5.PNG")
-      },
-      {
-        img: require("./images/bttrFly1.PNG")
-      },
-      {
-        img: require("./images/bttrFly2.PNG")
-      },
-      {
-        img: require("./images/bttrFly3.PNG")
-      },
-      {
-        img: require("./images/bttrFly6.PNG")
-      },
-      {
-        img: require("./images/fish1.PNG")
-      },
-      {
-        img: require("./images/fish2.PNG")
-      },
-      {
-        img: require("./images/fish4.PNG")
-      },
-      {
-        img: require("./images/fish6.PNG")
-      }
-    ]
+    animals
   };
 
   //CLICK SECTION
@@ -150,15 +113,16 @@ class App extends Component {
           incorrectMessage={this.state.incorrectMessage}
         />
         <Header />
-        <GameBoard
-          {...this.state.animals.map((animal, index) => (
+    
+          {this.state.animals.map(animal => (
             <GameCards
-              id={index}
-              image={animal.img}
+              key={animal.id}
+              id={animal.id}
+              image={animal.image}
               onClick={this.handleClick}
             />
           ))}
-        />
+       
       </div>
     );
   }
