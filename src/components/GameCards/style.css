@@ -1,44 +1,26 @@
-/* .photo-grid-container {
+.animalPics {
+  padding-top: 10px;
   display: flex;
-  width: 100%;
-  height: auto;
-  justify-content: center;
+  flex-flow: row wrap;
+  padding-bottom: 5px;
+  padding-left: 100px;
+  padding-right: 100px;
+  justify-content: space-around;
+  align-content: flex-start;
+  overflow: auto;
 }
 
-.photo-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-} */
-
-.gameCards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+img {
+  background: #fff;
+  border-radius: 10px;
   position: relative;
-  width: 250px;
-  height: 275px;
-  /* float: left; */
-  margin-right: 100px;
-  margin-bottom: 40px;
+  box-shadow: 0 10px 6px #999, 0 3px 6px #999;
+  margin: 0px 50px 20px 50px;
 }
 
-/* 
-.gameCards {
-  cursor: pointer;
-  margin: 0 auto;
+.animalPics img {
   width: 200px;
   height: 200px;
-  background-size: cover;
-  background-clip: content-box;
-  border-radius: 5px;
-} */
-
-.gameCards .imgContainer {
-  height: 100%;
-  overflow: hidden;
-  display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
 }

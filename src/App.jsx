@@ -113,16 +113,15 @@ class App extends Component {
           incorrectMessage={this.state.incorrectMessage}
         />
         <Header />
-    
-          {this.state.animals.map(animal => (
-            <GameCards
-              key={animal.id}
-              id={animal.id}
-              image={animal.image}
-              onClick={this.handleClick}
-            />
-          ))}
-       
+
+        {this.state.animals.map(animal => (
+          <GameCards
+            key={animal.id}
+            id={animal.id}
+            image={animal.image}
+            onClick={this.handleClick}
+          />
+        ))}
       </div>
     );
   }

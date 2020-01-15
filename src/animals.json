@@ -27,48 +27,48 @@
     "id": 5,
     "name": "bttrFly1",
     "clicked": false,
-    "image": "../public/assets/images/bttrFly1.png"
+    "image": "https://images.pexels.com/photos/672142/pexels-photo-672142.jpeg?cs=srgb&dl=close-up-photography-of-a-butterfly-672142.jpg&fm=jpg"
   },
   {
     "id": 6,
     "name": "bttrFly2",
     "clicked": false,
-    "image": "../public/assets/images/bttrFly2.PNG"
+    "image": "https://images.tyrantfarms.com/Img/frittilary-butterfly-images/monarch-butterfly-2.png"
   },
   {
     "id": 7,
     "name": "bttrFly3",
     "clicked": false,
-    "image": "../public/assets/images/bttrFly3.PNG"
+    "image": "https://www.fijnuit.nl/images/bedrijven/967-vlindorado/vlindorado-blauwe-morpho.jpg"
   },
   {
     "id": 8,
     "name": "bttrFly6",
     "clicked": false,
-    "image": "../public/assets/images/bttrFly6.PNG"
+    "image": "https://images.pexels.com/photos/67811/butterfly-swallowtail-papilio-animal-67811.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
   },
   {
     "id": 9,
     "name": "fish1",
     "clicked": false,
-    "image": "../public/assets/images/fish1.PNG"
+    "image": "https://external-preview.redd.it/fh7cvceBlVClvGGXQx0cZlDSXh3AZH9-EPXgkLDOCbs.png?auto=webp&s=88a7655fa2c800f7868835f3a7af3896df14f41a"
   },
   {
     "animal": 10,
     "name": "fish2",
     "clicked": false,
-    "image": "../public/assets/images/fish2.PNG"
+    "image": "https://i.dailymail.co.uk/i/pix/2012/08/30/article-2195735-14BF82F8000005DC-353_634x488.jpg"
   },
   {
     "id": 11,
     "name": "fish4",
     "clicked": false,
-    "image": "../public/assets/images/fish4.PNG"
+    "image": "https://i.pinimg.com/originals/81/60/21/81602166005708c6f23fe0dde66b78ad.jpg"
   },
   {
     "id": 12,
     "name": "fish6",
     "clicked": false,
-    "image": "../public/assets/images/fish6.PNG"
+    "image": "https://featuredcreature.com/wp-content/uploads/2016/06/wolffish_teeth.jpg"
   }
 ]
