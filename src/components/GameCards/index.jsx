@@ -3,16 +3,16 @@ import "./style.css";
 
 const GameCards = props => {
   return (
-    <div className="animalPics">
-      <div class="photo-grid-container">
-        <img
-          alt={props.name}
-          src={props.image}
-          key={props.id}
-          onClick={props.onClick}
-        />
+      <div className="photo-grid-container">
+        <div className="row">
+          <img
+            key={props.id}
+            alt={props.name}
+            src={props.image}
+            onClick={props.onClick}
+          />
+        </div>
       </div>
-    </div>
   );
 };
 

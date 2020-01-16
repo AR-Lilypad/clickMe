@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import GameBoard from "./components/GameBoard";
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import GameCards from "./components/GameCards";

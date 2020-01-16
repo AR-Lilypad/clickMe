@@ -1,5 +1,7 @@
-.animalPics {
-  padding-top: 10px;
+ .photo-grid-container .row {
+   width: 100%;
+   max-height: 900px;
+  padding: 10px;
   display: flex;
   flex-flow: row wrap;
   padding-bottom: 5px;
@@ -18,7 +20,7 @@ img {
   margin: 0px 50px 20px 50px;
 }
 
-.animalPics img {
+ .row img {
   width: 200px;
   height: 200px;
   margin-left: auto;

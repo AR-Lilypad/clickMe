@@ -1,44 +1,12 @@
 .GameBoard {
-  margin-bottom: 50px;
-  padding: 0;
-  padding-top: 50px;
-  background: rgb(0, 0, 0);
-  height: 130%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-content: flex-start;
-  overflow: auto;
-}
-
-.gameMessage {
-  text-align: center;
-  max-width: 100%;
-  align-content: center;
-}
-
-.gameMessage p {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  background-color: #282c34;
-  color: white;
-  padding: 20px 0;
-  margin-bottom: 0px;
-}
-
-.gameScores {
-  text-align: center;
-  max-width: 100%;
-  align-content: center;
-  margin-bottom: 10px;
-}
-.gameScores p {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  background-color: #003366;
-  color: white;
-  padding: 20px 0;
-  margin-bottom: 25px;
-}
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 50px;
+    width:60%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    justify-content: space-around;
+    align-content: flex-start;
+    overflow: auto;
+  }
