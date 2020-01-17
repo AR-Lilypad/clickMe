@@ -119,26 +119,29 @@ class App extends Component {
   // Map over this.state.animals and render GameCards
   render() {
     return (
-      <div className="app">
-        <NavBar
-          title="Clicky Animals"
-          score={this.state.score}
-          topScore={this.state.topScore}
-          update={this.state.update}
-          correctMessage={this.state.correctMessage}
-          incorrectMessage={this.state.incorrectMessage}
-        />
-        <Header />
-
-        {this.state.animals.map((animal, index) => (
-          <GameCards
-            key={animal.id}
-            id={animal.id}
-            image={animal.image}
-            onClick={this.click}
-            name={animal.name}
+      <div className="section">
+        <div className="app">
+          <NavBar
+            title="Clicky Animals"
+            score={this.state.score}
+            topScore={this.state.topScore}
+            update={this.state.update}
+            correctMessage={this.state.correctMessage}
+            incorrectMessage={this.state.incorrectMessage}
           />
-        ))}
+          <Header />
+        </div>
+        <div className="wrapper">
+          {this.state.animals.map((animal, index) => (
+            <GameCards
+              key={animal.id}
+              id={animal.id}
+              image={animal.image}
+              onClick={this.click}
+              name={animal.name}
+            />
+          ))}
+        </div>
       </div>
     );
   }

@@ -3,10 +3,10 @@ import "./style.css";
 
 const GameCards = props => {
   return (
-    <div className="photo-grid-container">
-      {/* <div className="row"> */}
-      <div className="row" id={props.key}>
+    <div className="wrapper">
+      <div className="gameCard" id={props.key}>
         <img
+          id="animalImage"
           value={props.key}
           key={props.id}
           alt={props.name}
@@ -15,7 +15,6 @@ const GameCards = props => {
         />
       </div>
     </div>
-    // </div>
   );
 };
 
