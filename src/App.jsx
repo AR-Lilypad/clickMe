@@ -19,30 +19,47 @@ class App extends Component {
   };
 
   //CLICK SECTION
-  click = id => {
+  click = event => {
     const newScore = this.state.score + 1;
+    console.log(event.target.alt);
     //If they haven't been clicked, add them to the array
-    if (this.state.ifClicked.indexOf(id) === -1) {
-      this.handleIncrement();
-      this.setState({
-        //concat joins arrays
-        ifClicked: this.state.ifClicked.concat(id),
-        correctMessage: "You guessed correctly!",
-        incorrectMessage: "",
-        update: ""
-      });
-      //if they've been clicked already, reset the game
-    } else {
-      this.reset();
+    for (let i = 0; i < this.state.ifClicked.length; i++) {
+      if (event.target.alt === this.state.ifClicked[i]) {
+        // this.reset();
+        window.location.reload();
+      }
+    }
+    let array = this.state.ifClicked;
+    array.push(event.target.alt);
+    this.setState({
+      score: newScore,
+      ifClicked: array
+    });
+    this.shuffle();
+    if (newScore == 12) {
+      alert("Congratulations you won!");
     }
 
+    //   this.handleIncrement();
+    //   this.setState({
+    //     //concat joins arrays
+    //     ifClicked: this.state.ifClicked.concat(id),
+    //     correctMessage: "You guessed correctly!",
+    //     incorrectMessage: "",
+    //     update: ""
+    //   });
+    //   //if they've been clicked already, reset the game
+    // } else {
+    //   this.reset();
+    // }
+
     //Setting it to winning number
-    if (newScore === 12 && this.state.ifClicked.indexOf(id) === -1) {
-      this.setState({
-        correctMessage: "You win!",
-        ifClicked: []
-      });
-    }
+    // if (newScore === 12 && this.state.ifClicked.indexOf(id) === -1) {
+    //   this.setState({
+    //     correctMessage: "You win!",
+    //     ifClicked: []
+    //   });
+    // }
   };
 
   //SCORING SECTION
@@ -113,12 +130,13 @@ class App extends Component {
         />
         <Header />
 
-        {this.state.animals.map(animal => (
+        {this.state.animals.map((animal, index) => (
           <GameCards
             key={animal.id}
             id={animal.id}
             image={animal.image}
-            onClick={this.handleClick}
+            onClick={this.click}
+            name={animal.name}
           />
         ))}
       </div>
