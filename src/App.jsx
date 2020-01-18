@@ -37,6 +37,7 @@ class App extends Component {
       ifClicked: array
     });
     this.shuffle();
+    // eslint-disable-next-line
     if (newScore == 12) {
       alert("Congratulations you won!");
     }
