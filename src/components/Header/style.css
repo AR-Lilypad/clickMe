@@ -9,9 +9,17 @@
   background-size: cover;
 }
 
-h2 {
+h2,
+h4 {
   font-family: "Ma Shan Zheng", cursive;
   padding-top: 25px;
   color: purple;
   text-align: center;
 }
+
+/* h4 {
+  font-family: "Ma Shan Zheng", cursive;
+  padding-top: 25px;
+  color: purple;
+  text-align: center;
+} */

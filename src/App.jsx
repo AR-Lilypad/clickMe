@@ -7,7 +7,7 @@ import "./App.css";
 
 //begin App component
 class App extends Component {
-  // Setting this.state.characters to the characters json array
+  // Setting this.state.animals to the animals json array
   state = {
     score: 0,
     topScore: 0,
@@ -25,7 +25,8 @@ class App extends Component {
     //If they haven't been clicked, add them to the array
     for (let i = 0; i < this.state.ifClicked.length; i++) {
       if (event.target.alt === this.state.ifClicked[i]) {
-        // this.reset();
+        alert("Sorry, you lost! Click to start over.");
+        this.reset();
         window.location.reload();
       }
     }
@@ -39,55 +40,6 @@ class App extends Component {
     if (newScore == 12) {
       alert("Congratulations you won!");
     }
-
-    //   this.handleIncrement();
-    //   this.setState({
-    //     //concat joins arrays
-    //     ifClicked: this.state.ifClicked.concat(id),
-    //     correctMessage: "You guessed correctly!",
-    //     incorrectMessage: "",
-    //     update: ""
-    //   });
-    //   //if they've been clicked already, reset the game
-    // } else {
-    //   this.reset();
-    // }
-
-    //Setting it to winning number
-    // if (newScore === 12 && this.state.ifClicked.indexOf(id) === -1) {
-    //   this.setState({
-    //     correctMessage: "You win!",
-    //     ifClicked: []
-    //   });
-    // }
-  };
-
-  //SCORING SECTION
-  handleIncrement = () => {
-    //Take existing score and add 1 to it
-    const newScore = this.state.score + 1;
-
-    // Update score and clear out message
-    this.setState({
-      score: newScore
-    });
-
-    //Set high score
-    if (newScore >= this.state.topScore) {
-      this.setState({
-        topScore: newScore
-      });
-    }
-    //Resetting score to 1 if they hit 13 (so that we can give them a score of 12, win the game, and then have them click again to start over).
-    // this makes 'top score' 12 so it can't go to 13 when they do the next click
-    if (newScore > 12) {
-      this.setState({
-        score: 1,
-        topScore: 12
-      });
-    }
-    //Shuffle cards
-    this.shuffle();
   };
 
   //Shuffle GameCards
@@ -112,15 +64,15 @@ class App extends Component {
       correctMessage: "",
       incorrectMessage: "Sorry! Click a character to start over."
     });
-    this.shuffle();
+    // this.shuffle();
   };
 
   //Render Game
   // Map over this.state.animals and render GameCards
   render() {
     return (
-      <div className="section">
-        <div className="app">
+      <div className="app">
+        <div className="section">
           <NavBar
             title="Clicky Animals"
             score={this.state.score}
@@ -131,16 +83,27 @@ class App extends Component {
           />
           <Header />
         </div>
-        <div className="wrapper">
-          {this.state.animals.map((animal, index) => (
-            <GameCards
-              key={animal.id}
-              id={animal.id}
-              image={animal.image}
-              onClick={this.click}
-              name={animal.name}
-            />
-          ))}
+
+        <div className="section">
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br> <br></br>
+          <br></br>
+          <br></br>
+          <br></br> <br></br>
+          <br></br>
+          <div className="wrapper">
+            {this.state.animals.map((animal, index) => (
+              <GameCards
+                key={animal.id}
+                id={animal.id}
+                image={animal.image}
+                onClick={this.click}
+                name={animal.name}
+              />
+            ))}
+          </div>
         </div>
       </div>
     );
